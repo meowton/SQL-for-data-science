@@ -211,10 +211,12 @@ GROUP BY
 
 ```sql
 SELECT
-name,
-review_count AS reviews
-FROM user
-ORDER BY reviews DESC
+  name,
+  review_count AS reviews
+FROM
+  user
+ORDER BY
+  reviews DESC
 LIMIT 3;
 ```
 
@@ -379,7 +381,7 @@ Yes. The 2.5 star service has less reviews (6) compared to the 4.0 star (30).
 +-----------+----------+-------+----------------------+--------------+
 ```
 
-iii. Are you able to infer anything from the location data provided between these two groups? Explain.
+**iii. Are you able to infer anything from the location data provided between these two groups? Explain.**
 
 No, they are in different locations.
 
